@@ -1,4 +1,6 @@
-﻿namespace Operatorler2
+﻿using System.Threading.Channels;
+
+namespace Operatorler2
 {
     internal class Program
     {
@@ -60,10 +62,31 @@
 
             //Console.WriteLine(gelenCevapKontrol);
 
-
+             
             int? a = null;
 
             Console.WriteLine(a is null);
+            Console.WriteLine(a is not null);
+
+
+
+
+            //null coalescing operatörü
+            //bu operatör sayesinde bir değerin  null olup olmadığı kontrolü yapabilmekteyiz. değer null ise bir atama da yapabilmekteyiz. not atama yapabilmek için her iki değerinde aynı türde olması gerekmektedir.
+
+            string xy = null;
+            //gelen değer null ise ahmet değerini ata
+            Console.WriteLine(xy ?? "ahmet");
+
+
+
+            /// null assigmnent atama operatörü
+            /// 
+
+            string xyy = null;
+            /// eğer ki gelen değer null ise sen varsayılan değer olaran xyy değişkenine bir değer ata
+            Console.WriteLine(xyy ??= "varsayılan değer");
+           
         }
     }
 }
