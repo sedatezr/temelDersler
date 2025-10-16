@@ -1,4 +1,6 @@
-﻿namespace hataKontrolMekanizmalari
+﻿using System.Threading.Tasks.Dataflow;
+
+namespace hataKontrolMekanizmalari
 {
     internal class Program
     {
@@ -32,6 +34,10 @@
                 catch(DivideByZeroException ex)
                 {
                     Console.WriteLine("mesaj: " + ex.Message);
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("hata algılandı");
                 }
             }
             //derleme esnasında alınan hatalar
