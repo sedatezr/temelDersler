@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkisKontrolMekanizmalari", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hataKontrolMekanizmalari", "hataKontrolMekanizmalari\hataKontrolMekanizmalari.csproj", "{2BD1C7C8-0405-4F9A-8B34-7A148AA10E52}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diziler", "Diziler\Diziler.csproj", "{C8B8AEC4-127F-424D-B79B-207F6DC6F9E4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{2BD1C7C8-0405-4F9A-8B34-7A148AA10E52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BD1C7C8-0405-4F9A-8B34-7A148AA10E52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BD1C7C8-0405-4F9A-8B34-7A148AA10E52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8B8AEC4-127F-424D-B79B-207F6DC6F9E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8B8AEC4-127F-424D-B79B-207F6DC6F9E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8B8AEC4-127F-424D-B79B-207F6DC6F9E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8B8AEC4-127F-424D-B79B-207F6DC6F9E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

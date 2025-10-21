@@ -24,7 +24,7 @@ namespace hataKontrolMekanizmalari
                     durumKontrol = false;
 
                 }
-                catch (FormatException ex )
+                catch (FormatException ex ) //DÖNÜŞTÜRME İŞLEMLERİNDE VERİLEN HATALARI KARŞILAR
                 {
 
                     Console.WriteLine("mesaj: " + ex.Message);
@@ -33,9 +33,9 @@ namespace hataKontrolMekanizmalari
                 }
                 catch(DivideByZeroException ex)
                 {
-                    Console.WriteLine("mesaj: " + ex.Message);
+                    Console.WriteLine("mesaj: " + ex.Message); // SAYISAL DEĞERLERDE BÖLÜNME HATALARI KARŞILAR
                 }
-                catch (Exception)
+                catch (Exception) // BÜTÜN HATALARI KARŞILAR
                 {
                     Console.WriteLine("hata algılandı");
                 }
