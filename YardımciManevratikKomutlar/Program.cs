@@ -115,23 +115,38 @@
 
 
             //girilen değer toplam ise sonucu göster ve sonlandır değilse çarp devam et
-            int carpim = 1;
-            while (true)
-            {
-                Console.WriteLine("bir sayı giriniz girdiğiniz sayı pozitif ise çarpar 't' bastığında bitirir ve sonucu verir");
+            //int carpim = 1;
+            //while (true)
+            //{
+            //    Console.WriteLine("bir sayı giriniz girdiğiniz sayı pozitif ise çarpar 't' bastığında bitirir ve sonucu verir");
 
-                string gelendeger = Console.ReadLine();
-                if( gelendeger == "t")
+            //    string gelendeger = Console.ReadLine();
+            //    if( gelendeger == "t")
+            //    {
+            //        Console.WriteLine(carpim);
+            //        return;
+
+            //    }else if (int.Parse(gelendeger) > 0)
+            //    {
+            //        Console.WriteLine("devam");
+            //        carpim *= int.Parse(gelendeger);
+            //        continue;
+            //    }
+            //}
+
+
+            //Return Keywordü
+            // return metod içerisinde kullanılır. kullanıldığı anda metod içerisinde çıkış yaparak uygulamayı sonlandırır.
+
+            while (true) {
+                Console.WriteLine("lütfen sonsuz döngüye devam ediniz 'c' basmanız durumunda program sonlanacaktır.....");
+                string gelenStringDeger = Console.ReadLine();
+                if(gelenStringDeger == "c")
                 {
-                    Console.WriteLine(carpim);
+                    Console.WriteLine($"uygulama sona erdi {gelenStringDeger}");
                     return;
-
-                }else if (int.Parse(gelendeger) > 0)
-                {
-                    Console.WriteLine("devam");
-                    carpim *= int.Parse(gelendeger);
-                    continue;
                 }
+            
             }
 
 
