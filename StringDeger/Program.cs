@@ -137,6 +137,33 @@ namespace StringDeger
                 Console.WriteLine(a);
             }
 
+
+
+            long TCkimlikNo = 26974587446;
+
+            int birinci = TCkimlikNo.ToString()[0];
+            int ucuncu = TCkimlikNo.ToString()[2];
+            int besinci = TCkimlikNo.ToString()[4];
+            int yedinci = TCkimlikNo.ToString()[6];
+            int dokuzuncu = TCkimlikNo.ToString()[8];
+
+
+            int birinciIslem = birinci + ucuncu + besinci + yedinci + dokuzuncu;
+
+            int carp = birinciIslem * 7;
+            //ikinci aşama
+
+            int ikinci = TCkimlikNo.ToString()[1];
+            int dortduncu = TCkimlikNo.ToString()[3];
+            int altinci = TCkimlikNo.ToString()[5];
+            int sekizinci = TCkimlikNo.ToString()[7];
+
+            int ikinciIslem = ikinci + dortduncu + altinci + sekizinci;
+
+            int islemYap = (carp - ikinciIslem) ;
+            int bol = islemYap / 10;
+            Console.WriteLine(islemYap);
+
         }
     }
 }
